@@ -1,0 +1,40 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace de Tokenização</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Marketplace de Ativos Tokenizados</h1>
+    </header>
+    <main>
+        <div class="token-info">
+            <h2>Saldo de Tokens</h2>
+            <p id="tokenBalance">0</p>
+        </div>
+        <button id="connectWallet">Conectar MetaMask</button> <!-- Botão para conectar a MetaMask -->
+        <button id="buyToken">Comprar Token</button>
+
+        <div class="available-tokens">
+            <h2>Tokens Disponíveis</h2>
+            <ul id="tokenList"></ul>
+        </div>
+
+        <div class="transaction-history">
+            <h2>Histórico de Transações</h2>
+            <ul id="transactionList"></ul>
+        </div>
+
+        <canvas id="performanceChart" width="400" height="200"></canvas>
+    </main>
+    <script src="app.js"></script>
+    <script src="transactions.js"></script>
+    <script src="charts.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+/* frontend/styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #a8e0f1 0%, #d0f4e8 100%); /* Gradiente suave de azul claro a verde claro */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Cor do texto mais escura para melhor legibilidade */
+}
+
+header {
+    background-color: rgba(0, 123, 255, 0.8); /* Fundo semi-transparente para o cabeçalho */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+}
+
+.token-info, .available-tokens, .transaction-history {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente para as seções */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 80%;
+}
+
+h2 {
+    color: #007bff; /* Cor vibrante para os títulos */
+}
+
+button {
+    background-color: #28a745; /* Cor vibrante para o botão */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.token-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.token-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+canvas {
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
